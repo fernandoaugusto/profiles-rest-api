@@ -1,0 +1,40 @@
+
+
+
+
+
+/*
+subir o vagrant
+*/
+vagrant up
+
+/*
+entrar no server
+*/
+vagrant ssh
+
+/*
+criar ambiente virtual
+*/
+mkvirtualenv profiles_api --python=python3
+
+/*
+sair do ambiente virtual
+*/
+deactivate
+
+/*
+entrar no ambiente virtual
+*/
+workon profiles_api
+
+
+/*
+instalar django no ambiente virtual criado
+*/
+pip install django==1.11
+
+/*
+instalar django rest framework no ambiente virtual criado
+*/
+pip install djangorestframework==3.6.2
