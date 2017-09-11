@@ -1,5 +1,7 @@
-
-
+/*
+iniciar vagrant na pasta
+*/
+vagrant init
 
 
 
@@ -38,3 +40,10 @@ pip install django==1.11
 instalar django rest framework no ambiente virtual criado
 */
 pip install djangorestframework==3.6.2
+
+
+
+
+
+
+cd Dropbox/Apps/Heroku/PythonProjects/workspace/profiles-rest-api

@@ -1,0 +1,15 @@
+/*
+criando um projeto Django... precisa estar na pasta src por best practice
+*/
+django-admin.py startproject profiles_project
+
+/*
+criando uma estrtutura do Django de pastas e arquivos de API... precisa estar na pasta criada
+pelo comando acima por best practice
+*/
+python manage.py startapp profiles_api
+
+
+
+/* lista apps e versoes que estao no projeto*/
+pip freeze
