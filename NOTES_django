@@ -38,8 +38,11 @@ python manage.py migrate
 
 /*
 Criar Super User
+Depois executar runserver para acessar o Django Admin 
+com o login e senha criados com o comando
 */
 python manage.py createsuperuser
+
 
 
 
