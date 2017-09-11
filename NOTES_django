@@ -13,3 +13,18 @@ python manage.py startapp profiles_api
 
 /* lista apps e versoes que estao no projeto*/
 pip freeze
+
+
+/*
+Run Server
+*/
+python manage.py runserver 0.0.0.0:8080     (Porta do guest no Vagrant file)
+
+acessar:    127.0.0.1:8081      (Porta do host no Vagrant file)
+
+
+
+
+
+
+cd Dropbox/Apps/Heroku/PythonProjects/workspace/profiles-rest-api
