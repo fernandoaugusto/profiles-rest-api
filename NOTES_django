@@ -36,6 +36,15 @@ python manage.py makemigrations
 python manage.py migrate
 
 
+/*
+Criar Super User
+*/
+python manage.py createsuperuser
+
+
+
+
+
 
 
 cd Dropbox/Apps/Heroku/PythonProjects/workspace/profiles-rest-api
