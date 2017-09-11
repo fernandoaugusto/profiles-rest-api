@@ -10,7 +10,7 @@ from django.contrib.auth.models import BaseUserManager
 class UserProfileManager(BaseUserManager):
     """Helps Django to work with the custom User Model"""
 
-    def create_user(self, email, name, password=none):
+    def create_user(self, email, name, password=None):
         """Creates a new user profile object"""
 
         if not email:
@@ -37,16 +37,16 @@ class UserProfileManager(BaseUserManager):
 
 
 class UserProfile(AbstractBaseUser, PermissionsMixin):
-    """Respents a "user profile" inside our system.""""
+    """Respents a "user profile" inside our system."""
 
-    email = models.EmailsField(max_length=255, unique=True)
+    email = models.EmailField(max_length=255, unique=True)
     name = models.CharField(max_length=255)
     is_active = models.BooleanField(default=True)
     is_staff = models.BooleanField(default=False)
 
     objects = UserProfileManager()
 
-    USERNAME_FIELD = 'email'   """User names fields are required as default"""
+    USERNAME_FIELD = 'email'   #User names fields are required as default
     REQUIRED_FIELDS = ['name']
 
     def get_full_name(self):

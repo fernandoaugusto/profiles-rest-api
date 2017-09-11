@@ -122,4 +122,5 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
+#Tell Python the model for Authentication
 AUTH_USER_MODEL = 'profiles_api.UserProfile'

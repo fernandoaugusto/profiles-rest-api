@@ -24,6 +24,17 @@ acessar:    127.0.0.1:8081      (Porta do host no Vagrant file)
 
 
 
+/*
+  Criar arquivos de migração de banco de dados.
+  Lê os modelos e cria os scripts. Só gera script quando há diferenças
+*/
+python manage.py makemigrations
+
+/*
+  Executa no banco os scripts gerados
+*/
+python manage.py migrate
+
 
 
 
